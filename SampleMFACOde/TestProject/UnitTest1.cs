@@ -66,7 +66,7 @@ namespace TestProject
             {
                 testResults.TestCaseResults = JsonConvert.SerializeObject(testCaseResults);
                 var testResultsJson = JsonConvert.SerializeObject(testResults);
-                await _httpClient.PostAsync("https://yaksha-stage-sbfn.azurewebsites.net/api/TestCaseResultsEnqueue?code=AjU0mofZlYs9oYbZnJpVwJWRY1dRKkDyS3QDY8aJAvrcjJvgBAXVDg==", new StringContent(testResultsJson, Encoding.UTF8, "application/json"));
+                await _httpClient.PostAsync("https://yaksha-stage-sbfn.azurewebsites.net/api/YakshaMFAEnqueue?code=JSssTES1yvRyHXshDwx6m405p0uSwbqnA937NaLAGX7zazwdLPC4jg==", new StringContent(testResultsJson, Encoding.UTF8, "application/json"));
             }
         }
     }
